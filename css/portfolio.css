@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+/*this overides padding default*/
+
+body {
+    font-size: 62.5%;
+    font-family: "amatic sc", cursive;
+}
+/*this scales fonts when zoom is altered in OS*/
+
+nav {
+    background-color: #DCDCDC;
+    height: 100px;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+
+}
+.menu {
+}
+.menu .buttons {
+    float: left;
+    border-style: solid;
+    font-size: 1rem;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.image-container {
+    width: 100%;
+    background-image: url("../images/after-the-storm-1460825.jpg");
+    background-size: cover;
+    height: 600px;
+    overflow: auto;
+}
+
+.image-title {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.title-style {
+    font-weight: bold;
+    color: white;
+    font-size: 5rem;
+}
+.section1 {
+    background-color: cadetblue;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+.section2 {
+    height:300px;
+    text-align: center;
+    font-size: 3rem;
+}
+.portfolio {
+    overflow: auto;
+}
+.portfolio .projects {
+    width: 33.3%;
+    float: left;
+    height: 300px;
+}
+
+#project1 {
+    background-size: cover;
+    background-image: url("../images/photo-1519893578517-3252b77e8fdf.jpeg")
+}
+#project2 {
+    background-size: cover;
+    background-image: url("../images/photo-1482941059634-6bf5a670d7bf.jpeg")
+}
+#project3 {
+    background-color: grey;
+}
+.footer {
+    background-color: #DCDCDC;
+    height: 100px;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
