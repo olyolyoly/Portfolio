@@ -5,7 +5,7 @@
 
 body {
     font-size: 62.5%;
-    font-family: "amatic sc", cursive;
+    font-family: 'Contrail One', cursive;
 }
 /*this scales fonts when zoom is altered in OS*/
 
@@ -38,7 +38,6 @@ nav {
     background-color: white;
     color: black;
 }
-
 .image-container {
     width: 100%;
     background-image: url("../images/after-the-storm-1460825.jpg");
@@ -46,12 +45,10 @@ nav {
     height: 600px;
     overflow: auto;
 }
-
 .image-title {
     text-align: center;
     margin-top: 250px;
 }
-
 .title-style {
     font-weight: bold;
     color: white;
@@ -64,14 +61,31 @@ nav {
 }
 .section1 {
     background-color: cadetblue;
-    height: 60px;
+    height: 3px0px;
     text-align: center;
     padding-top: 20px;
 }
+.section1-title {
+    color: white;
+}
 .section2 {
-    height:300px;
+    height: 500px;
     text-align: center;
     font-size: 3rem;
+    padding: 30px;
+}
+.bio-container {
+    height: 320px;
+    width: 900px;
+    border-radius: 20px;
+    border-color: grey;
+    border-style: solid;
+    /*margin: 0 auto;*/
+    display: inline-block;
+    font-size: 1rem;
+    padding: 20px;
+    line-height: 2rem;
+    margin-top: 30px;
 }
 .portfolio {
     overflow: auto;
@@ -81,7 +95,6 @@ nav {
     float: left;
     height: 300px;
 }
-
 #project1 {
     background-size: cover;
     background-image: url("../images/photo-1519893578517-3252b77e8fdf.jpeg")
