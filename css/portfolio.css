@@ -38,7 +38,6 @@ nav {
     background-color: white;
     color: black;
 }
-
 .image-container {
     width: 100%;
     background-image: url("../images/after-the-storm-1460825.jpg");
@@ -46,12 +45,10 @@ nav {
     height: 600px;
     overflow: auto;
 }
-
 .image-title {
     text-align: center;
     margin-top: 250px;
 }
-
 .title-style {
     font-weight: bold;
     color: white;
@@ -70,7 +67,6 @@ nav {
 }
 .section1-title {
     color: white;
-
 }
 .section2 {
     height: 500px;
@@ -90,7 +86,6 @@ nav {
     padding: 20px;
     line-height: 2rem;
     margin-top: 30px;
-
 }
 .portfolio {
     overflow: auto;
@@ -100,7 +95,6 @@ nav {
     float: left;
     height: 300px;
 }
-
 #project1 {
     background-size: cover;
     background-image: url("../images/photo-1519893578517-3252b77e8fdf.jpeg")
