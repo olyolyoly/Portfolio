@@ -11,13 +11,13 @@ body {
 
 nav {
     background-color: #DCDCDC;
-    height: 100px;
+    height: 80px;
     padding-top: 20px;
     color: white;
     font-weight: bold;
     position: fixed;
     width: 100%;
-
+    opacity: 0.5;
 }
 .menu {
 }
@@ -30,6 +30,13 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 20px;
+    border-radius: 10px;
+    color: cadetblue;
+    transition: background-color 1.0s ease, color 0.3s ease;
+}
+.menu .buttons:hover {
+    background-color: white;
+    color: black;
 }
 
 .image-container {
@@ -49,6 +56,11 @@ nav {
     font-weight: bold;
     color: white;
     font-size: 5rem;
+}
+.title-style2 {
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
 }
 .section1 {
     background-color: cadetblue;
@@ -79,7 +91,8 @@ nav {
     background-image: url("../images/photo-1482941059634-6bf5a670d7bf.jpeg")
 }
 #project3 {
-    background-color: grey;
+    background-size: cover;
+    background-image: url("../images/photo-1526374870839-e155464bb9b2.jpeg")
 }
 .footer {
     background-color: #DCDCDC;
