@@ -12,30 +12,33 @@
 <body>
     <nav>
         <div class="menu">
-            <div class="buttons"> HOME </div>
-            <div class="buttons"> ABOUT </div>
-            <div class="buttons"> PORTFOLIO </div>
-            <div class="buttons"> CONTACT </div>
+            <a href="#home" class="buttons"> HOME </a>
+            <a href="#aboutme" class="buttons"> ABOUT </a>
+            <a href="#portfolio" class="buttons"> PORTFOLIO </a>
+            <a href="#contact" class="buttons"> CONTACT </a>
+            <div class="images"></div>
         </div>
     </nav>
 
-    <div class="image-container">
-        <div class="image-title">
-            <h1 class="title-style">Oliver Matthews</h1>
-            <h2 class="title-style2">Trainee Full-Stack Developer</h2>
+    <section id="home">
+        <div class="image-container">
+            <div class="image-title">
+                <h1 class="title-style">Oliver Matthews</h1>
+                <h2 class="title-style2">Trainee Full-Stack Developer</h2>
+            </div>
         </div>
-    </div>
+    </section>
 
     <section class="section1">
     </section>
 
-    <section class="section2">
-        <div>About me</div>
+    <section id="aboutme" class="section2">
+        <h4>About me</h4>
         <div class="bio-container">I am a student at Mayden Academy in Bath completing  a 16 week intensive, full-stack software developer programme.
 
             I’m quickly growing my technical skills and have adopted an agile approach to individual and team tasks.
 
-            Before this I was a Director at a startup company based in London, we grew the company from a team of 2 to 25 in 5 years.
+            Before this I was a Director at a startup company based in London, we grew the company from a team of 2 to 25 over a 5 year period.
 
             I have extensive experience in sales & marketing, key account management and operations.
 
@@ -53,18 +56,30 @@
         </div>
     </section>
 
-    <div class="portfolio">
-        <div class="projects" id="project1">Example 1</div>
-        <div class="projects" id="project2">Example 2</div>
-        <div class="projects" id="project3">Example 3</div>
-    </div>
-    <footer class="footer"> CONTACT </footer>
+    <section id="portfolio">
+        <div class="section3">
+            <h4>Portfolio</h4>
+        </div>
+            <div class="portfolio">
+                <div class="projects overlay project1">Example 1</div>
+                <div class="projects project2">Example 2</div>
+                <div class="projects project3">Example 3</div>
+            </div>
+    </section>
 
+    <section id="contact">
+        <footer class="footer">
 
+            <div class="contact-container">
+                <h1>Contact</h1>
+                <h3>o.matthews@rocketmail.com</h3>
+                <h3>07897 533 334</h3>
+                <a href="https://github.com/olyolyoly/Portfolio" class="github-image"></a>
+                <a href="https://www.linkedin.com/in/oliver-matthews/" class="linkedin-image"></a>
+            </div>
 
+        </footer>
+    </section>
 
 </body>
-
-
-
 </html>
