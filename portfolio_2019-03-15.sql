@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.43)
 # Database: portfolio
-# Generation Time: 2019-03-15 15:46:32 +0000
+# Generation Time: 2019-03-15 15:59:27 +0000
 # ************************************************************
 
 
@@ -27,9 +27,7 @@ DROP TABLE IF EXISTS `portfolio`;
 
 CREATE TABLE `portfolio` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `Example 1` mediumtext,
   `Title` mediumtext,
-  `Description` mediumtext,
   `Image URL` mediumtext,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
