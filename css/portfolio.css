@@ -75,18 +75,25 @@ nav {
     text-align: center;
     font-size: 3rem;
     padding: 30px;
+    position: relative;
 }
 .bio-container {
     height: 250px;
+    width: 80%;
     border-radius: 20px;
     border-color: grey;
     border-style: solid;
     /*margin: 0 auto;*/
-    display: inline-block;
+    /*display: inline-block;*/
     font-size: 1rem;
     padding: 20px;
     line-height: 2rem;
     margin-top: 30px;
+    position: absolute;
+    overflow: auto;
+}
+.bio-text {
+    position: absolute;
 }
 .section3 {
     background-color: #DCDCDC;
@@ -102,8 +109,40 @@ nav {
     width: 33.3%;
     float: left;
     height: 300px;
-    position: relative;
 }
+/*.project-hover {*/
+    /*background: rgba(220,220,220, 0);*/
+    /*-webkit-transition: all 1s ease;*/
+    /*-moz-transition: all 1s ease;*/
+    /*-o-transition: all 1s ease;*/
+    /*transition: all 1s ease;*/
+/*}*/
+
+/*.project-hover:hover {*/
+    /*height: 300px;*/
+    /*width: 33.3%;*/
+    /*background: rgba(220,220,220, 0.2);*/
+    /*-webkit-transition: all 1s ease;*/
+    /*-moz-transition: all 1s ease;*/
+    /*-o-transition: all 1s ease;*/
+    /*transition: all 1s ease;*/
+/*}*/
+
+.project-hover:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(220, 0, 0, 0.5);
+    opacity: 0;
+    /*-webkit-transition: opacity 300ms ease-in-out;*/
+    /*-moz-transition: opacity 300ms ease-in-out;*/
+    /*-ms-transition: opacity 300ms ease-in-out;*/
+    /*-o-transition: opacity 300ms ease-in-out;*/
+    transition: opacity 300ms ease-in-out;
+}
+
 .project1 {
     background-size: cover;
     background-image: url("../images/photo-1519893578517-3252b77e8fdf.jpeg")
@@ -116,21 +155,7 @@ nav {
     background-size: cover;
     background-image: url("../images/photo-1526374870839-e155464bb9b2.jpeg")
 }
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-}
-.portfolio:hover .overlay {
-    bottom: 0;
-    height: 100%;
-}
+
 .footer {
     background-color: cadetblue;
     padding-top: 20px;
@@ -144,6 +169,13 @@ nav {
     width: 500px;
     display: inline-block;
     font-size: 1rem;
+}
+.mail-image {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-image: url("../images/mail.png");
+    display: inline-block;
 }
 .github-image {
     height: 50px;
@@ -175,7 +207,7 @@ nav {
     }
 
     .section2 {
-        height: 1200px;
+        height: 800px;
     }
 
     nav {
@@ -192,5 +224,3 @@ nav {
 
     }
 }
-
-
