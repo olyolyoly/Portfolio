@@ -7,6 +7,7 @@ $sql = 'SELECT `Title`,`Image_URL` FROM `portfolio`;';
 $query = $db->query($sql);
 
 $result= $query->fetchAll();
+
 ?>
 
 <html lang="en">
@@ -33,7 +34,7 @@ $result= $query->fetchAll();
     <section id="home">
         <div class="image-container">
             <div class="image-title">
-                <h1 class="title-style"><?php echo 'Oliver Matthoews'; ?></h1>
+                <h1 class="title-style">Oliver Matthews</h1>
                 <h2 class="title-style2">Trainee Full-Stack Developer</h2>
             </div>
         </div>
@@ -74,8 +75,12 @@ $result= $query->fetchAll();
         </div>
             <div class="portfolio">
                 <?php
-                foreach ($result as $project) {
-                   echo '<div class="projects project-hover" style="background-image: url(' . $project['Image_URL'] . ')">' . $project['Title'] . '</div>';
+                if (!empty($result)) {
+                    foreach ($result as $project) {
+                        echo '<div class="projects project-hover" style="background-image: url(' . $project['Image_URL'] . ')">' . $project['Title'] . '</div>';
+                    }
+                } else {
+                    echo '<h1 class="error-message"> <<<<< Error connecting to the database, please check back soon>>>>> </h1>';
                 }
                 ?>
             </div>
