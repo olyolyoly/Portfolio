@@ -33,7 +33,7 @@ $result= $query->fetchAll();
     <section id="home">
         <div class="image-container">
             <div class="image-title">
-                <h1 class="title-style"><?php echo 'Oliver Matthoews'; ?></h1>
+                <h1 class="title-style">Oliver Matthews</h1>
                 <h2 class="title-style2">Trainee Full-Stack Developer</h2>
             </div>
         </div>
