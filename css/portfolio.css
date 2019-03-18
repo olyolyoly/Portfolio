@@ -121,6 +121,10 @@ nav {
     -o-transition: all 1s ease;
     transition: all 1s ease;
 }
+.error-message {
+    width: 100%;
+    text-align: center;
+}
 
 .footer {
     background-color: cadetblue;
