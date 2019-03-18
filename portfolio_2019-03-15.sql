@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.43)
 # Database: portfolio
-# Generation Time: 2019-03-15 15:59:27 +0000
+# Generation Time: 2019-03-15 16:27:10 +0000
 # ************************************************************
 
 
@@ -32,6 +32,17 @@ CREATE TABLE `portfolio` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+LOCK TABLES `portfolio` WRITE;
+/*!40000 ALTER TABLE `portfolio` DISABLE KEYS */;
+
+INSERT INTO `portfolio` (`id`, `Title`, `Image URL`)
+VALUES
+	(1,'Example 1','images/photo-1519893578517-3252b77e8fdf.jpeg'),
+	(2,'Example 2','images/photo-1482941059634-6bf5a670d7bf.jpeg'),
+	(3,'Example 3','images/photo-1526374870839-e155464bb9b2.jpeg');
+
+/*!40000 ALTER TABLE `portfolio` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 

@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+$db = new PDO("mysql:host=192.168.20.20;dbname=portfolio", 'root', '');
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
+
+$sql = 'SELECT `Title`,`Image_URL` FROM `portfolio`;';
+$query = $db->query($sql);
+
+$result= $query->fetchAll();
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,7 +33,7 @@
     <section id="home">
         <div class="image-container">
             <div class="image-title">
-                <h1 class="title-style">Oliver Matthews</h1>
+                <h1 class="title-style"><?php echo 'Oliver Matthoews'; ?></h1>
                 <h2 class="title-style2">Trainee Full-Stack Developer</h2>
             </div>
         </div>
@@ -63,9 +73,11 @@
             <h4>Portfolio</h4>
         </div>
             <div class="portfolio">
-                <div class="projects project1 project-hover">Example 1</div>
-                <div class="projects project2 project-hover">Example 2</div>
-                <div class="projects project3 project-hover">Example 3</div>
+                <?php
+                foreach ($result as $project) {
+                   echo '<div class="projects project-hover" style="background-image: url(' . $project['Image_URL'] . ')">' . $project['Title'] . '</div>';
+                }
+                ?>
             </div>
     </section>
 
@@ -85,3 +97,4 @@
 
 </body>
 </html>
+
