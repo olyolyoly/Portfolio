@@ -3,12 +3,11 @@ $db = new PDO("mysql:host=192.168.20.20;dbname=portfolio", 'root', '');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 
-//$sql = 'SELECT `Title`,`Image_URL` FROM `portfolio`;';
-//$query = $db->query($sql);
-//
-//$result= $query->fetchAll();
+$sql = 'SELECT `Title`,`Image_URL` FROM `portfolio`;';
+$query = $db->query($sql);
 
-$result = [];
+$result= $query->fetchAll();
+
 ?>
 
 <html lang="en">
@@ -81,7 +80,7 @@ $result = [];
                         echo '<div class="projects project-hover" style="background-image: url(' . $project['Image_URL'] . ')">' . $project['Title'] . '</div>';
                     }
                 } else {
-                    echo '<html> <h1 class="error-message"> <<<<< Error connecting to the database, please check back soon>>>>> </h1></html>';
+                    echo '<h1 class="error-message"> <<<<< Error connecting to the database, please check back soon>>>>> </h1>';
                 }
                 ?>
             </div>
