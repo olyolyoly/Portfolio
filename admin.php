@@ -5,7 +5,7 @@ $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 $sql = 'SELECT `Title` FROM `portfolio`;';
 $query = $db->query($sql);
 
-$result= $query->fetchAll();
+$projects = $query->fetchAll();
 
 ?>
 <html lang="en">
@@ -27,7 +27,7 @@ $result= $query->fetchAll();
                 <th></th>
             </tr>
             <?php
-            foreach ($result as $project) {
+            foreach ($projects as $project) {
                 echo '<tr><td>' . $project['Title'] . '</td><td><a href="#">Edit</a></td><td><a href="#">Del</a></td></tr>';
             }
             ?>
