@@ -1,0 +1,19 @@
+body {
+    font-size: 62.5%;
+    font-family: 'Contrail One', cursive;
+}
+
+table {
+    font-family: "Arial";
+    width: 20%;
+    margin: 0 auto;
+}
+
+.add-button {
+    font-family: "Arial";
+    color: red;
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
