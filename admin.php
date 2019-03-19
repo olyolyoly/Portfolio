@@ -2,12 +2,10 @@
 $db = new PDO("mysql:host=192.168.20.20;dbname=portfolio", 'root', '');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-
-$sql = 'SELECT `id`, `Title` FROM `portfolio`;';
+$sql = 'SELECT `Title` FROM `portfolio`;';
 $query = $db->query($sql);
 
 $result= $query->fetchAll();
-
 
 ?>
 <html lang="en">
@@ -18,7 +16,6 @@ $result= $query->fetchAll();
     <link href="css/admin.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
     <title>Admin</title>
-
 </head>
 
 <body>
@@ -35,7 +32,7 @@ $result= $query->fetchAll();
             }
             ?>
         </table>
-        <BR>
+        <br>
         <a href="#" class="add-button"> ADD PROJECT </a>
     </div>
 </body>

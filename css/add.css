@@ -1,14 +1,15 @@
 body {
     font-size: 62.5%;
     font-family: 'Contrail One', cursive;
+
 }
 
 .container {
     top: 50px;
+    left: 150px;
     border-radius: 10px;
     border-style: solid;
     border-color: purple;
     padding: 20px;
     position: absolute;
-    margin: 0 auto;
 }
