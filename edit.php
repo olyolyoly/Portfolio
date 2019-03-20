@@ -11,12 +11,6 @@ $query->execute([$id]);
 
 $project = $query->fetch();
 
-
-
-
-
-
-
 ?>
 
 
@@ -36,7 +30,7 @@ $project = $query->fetch();
 
 <div class="section">
     <div class="container">
-        <form method="POST" action="edit.php">
+        <form method="POST" action="editupdate.php?id=<?php echo $id;?>">
             <label class="label">Edit Project Title</label>
             <input type="text" name="title" value="<?php echo $project['Title'];?>">
             <br>
