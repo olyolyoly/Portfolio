@@ -28,7 +28,7 @@ $projects = $query->fetchAll();
             </tr>
             <?php
             foreach ($projects as $project) {
-                echo '<tr><td>' . $project['Title'] . '</td><td><a href="edit.php?id=' . $project['id'] . '">Edit</a></td><td><a href="#">Del</a></td></tr>';
+                echo '<tr><td>' . $project['Title'] . '</td><td><a href="edit.php?id=' . $project['id'] . '">Edit</a></td><td><a href="delete.php?id=' . $project['id'] . '">Del</a></td></tr>';
             }
             ?>
         </table>
