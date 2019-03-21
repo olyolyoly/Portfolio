@@ -20,4 +20,4 @@ if ($result) {
     echo 'Database Error';
 }
 
-?>git
+?>
