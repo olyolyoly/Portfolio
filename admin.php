@@ -2,7 +2,7 @@
 $db = new PDO("mysql:host=192.168.20.20;dbname=portfolio", 'root', '');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-$sql = 'SELECT `Title` FROM `portfolio`;';
+$sql = 'SELECT `id`,`Title` FROM `portfolio`;';
 $query = $db->query($sql);
 
 $projects = $query->fetchAll();
@@ -28,12 +28,12 @@ $projects = $query->fetchAll();
             </tr>
             <?php
             foreach ($projects as $project) {
-                echo '<tr><td>' . $project['Title'] . '</td><td><a href="#">Edit</a></td><td><a href="#">Del</a></td></tr>';
+                echo '<tr><td>' . $project['Title'] . '</td><td><a href="edit.php?id=' . $project['id'] . '">Edit</a></td><td><a href="#">Del</a></td></tr>';
             }
             ?>
         </table>
         <br>
-        <a href="#" class="add-button"> ADD PROJECT </a>
+        <a href="addproject.php" class="add-button"> ADD PROJECT </a>
     </div>
 </body>
 
