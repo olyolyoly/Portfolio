@@ -4,13 +4,13 @@ $db = new PDO('mysql:host=192.168.20.20;dbname=portfolio', 'root', '');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 $id = $_GET['id'];
+if (!empty($_GET['id'])) {
+    $sql = 'SELECT `id`,`Title`,`Image_URL` FROM `portfolio` WHERE `id` = ?;';
+    $query = $db->prepare($sql);
+    $query->execute([$id]);
 
-$sql = 'SELECT `id`,`Title`,`Image_URL` FROM `portfolio` WHERE `id` = ?;';
-$query = $db->prepare($sql);
-$query->execute([$id]);
-
-$project = $query->fetch();
-
+    $project = $query->fetch();
+}
 
 
 ?>
