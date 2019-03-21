@@ -11,6 +11,8 @@ $query->execute([$id]);
 
 $project = $query->fetch();
 
+
+
 ?>
 
 
@@ -32,12 +34,19 @@ $project = $query->fetch();
     <div class="container">
         <form method="POST" action="editupdate.php?id=<?php echo $id;?>">
             <label class="label">Edit Project Title</label>
-            <input type="text" name="title" value="<?php echo $project['Title'];?>">
+            <input type="text" name="title" value="<?php echo $project['Title'];?>" required>
             <br>
             <br>
             <label class="label">Edit Image URL</label>
-            <input type="text" name="url" value="<?php echo $project['Image_URL'];?>">
+            <input type="text" name="url" value="<?php echo $project['Image_URL'];?>" required>
             <br>
+            <?php
+
+            if (empty($_GET['id'])) {
+                echo '<p>No projected selected to edit</p>';
+                }
+            ?>
+
             <br>
             <input type="submit" value="Edit">
         </form>
@@ -45,4 +54,6 @@ $project = $query->fetch();
 </div>
 </body>
 </html>
+
+
 
